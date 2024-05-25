@@ -46,6 +46,38 @@
     justify-content: center;
     align-items: center;
     height: max-content;
+    margin: 20px;
+}
+.tableHW{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: max-content;
+}
+.tableItem{
+    display: flex;
+    flex-direction: row;
+    
+}
+.rowHW{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    margin: 10px;
+    width: 90%;
+    height: max-content;
+}
+.columnHW{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 200px;
 }
 .maxCenter{
     display: flex;
