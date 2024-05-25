@@ -5,17 +5,17 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: bisque;
 }
 .List{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 80%;
+    height: 90%;
     padding: 30px;
     overflow-y: scroll;
-    background-color: fuchsia;
+    background-color: antiquewhite;
 }
 .ListElement{
     display: flex;
@@ -24,18 +24,17 @@
     border-radius: 7px;
     border-style: solid;
     border-width: 1px;
+    margin: 7px;
     border-color: black;
-    background-color: black;
+    background-color: white;
 }
 .LecturerFullName{
     display: inline;
     width: 38%;
     margin: 5px;
-    background-color: red;
 }
 .LecturerSyllabus{
     display: inline;
     width: 55%;
     margin: 5px;
-    background-color: blue;
 }
