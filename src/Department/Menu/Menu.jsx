@@ -1,13 +1,18 @@
 import { useState } from "react";
 import style from "./Menu.module.css"
+import { NavLink } from "react-router-dom";
 function Menu() {
     const [styleLeft, setStyleLeft]=useState("-263px");
     const [isClosed, setIsClosed]=useState(true);
     return(
         <div style={{left: styleLeft}} className={`${style.Menu}`}>
             <div className={`${style.List}`}>
-                <span className={`${style.Link}`}>link1</span>
-                <span className={`${style.Link}`}>link2</span>
+                <NavLink className={`${style.NavLink}`} to="/">
+                    <span className={`${style.Link}`}>Головна</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/lecturerList">
+                    <span className={`${style.Link}`}>Викладачі</span>
+                </NavLink>
                 <span className={`${style.Link}`}>link3</span>
                 <span className={`${style.Link}`}>link4</span>
                 <span className={`${style.Link}`}>link5</span>

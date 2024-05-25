@@ -7,6 +7,12 @@
     height: 100vh;
     background-color: bisque;
 }
+.NavLink{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
 .List{
     display: flex;
     flex-direction: column;
@@ -37,4 +43,43 @@
     display: inline;
     width: 55%;
     margin: 5px;
+}
+.Lecturer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+.LecturerPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 512px;
+    width: 512px;
+    background-color: white;
+}
+.LecturerInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+}
+.LecturerFullInfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    background-color: fuchsia;
+    height: 90vh;
+    margin: 5px;
+}
+.Block{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 20px;
+    font-size: 22px;
 }
