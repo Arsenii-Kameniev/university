@@ -1,0 +1,36 @@
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: -1px;
+    width: 300px;
+    top: 25%;
+    padding: 10px 0px 10px 0px;
+    transition: all, 1.5s;
+}
+.List{
+    display: flex;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: burlywood;
+}
+.Link{
+    display: inline;
+    margin: 5px 0px 5px 0px;
+}
+.Open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -90deg;
+    position: relative;
+    left: -10px;
+    top: -3px;
+    height: 50px;
+    width: 50px;
+}
