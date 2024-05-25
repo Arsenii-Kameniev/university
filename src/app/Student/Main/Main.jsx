@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Main.module.css';
+import Menu from '../../../Department/Menu/Menu';
 export function Main() {
     return (
         <>
+        <Menu></Menu>
             <div className={styles.body}>
                 <div className={styles.upperRow}>
 

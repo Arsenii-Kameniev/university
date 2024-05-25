@@ -1,20 +1,78 @@
 import { useState } from "react";
-import style from "./Menu.module.css"
+import style from "./Menu.module.css";
+import { Navigate, useNavigate } from 'react-router-dom';
 function Menu() {
     const [styleLeft, setStyleLeft]=useState("-263px");
     const [isClosed, setIsClosed]=useState(true);
+    const Navigate = useNavigate();
     return(
         <div style={{left: styleLeft}} className={`${style.Menu}`}>
             <div className={`${style.List}`}>
-                <span className={`${style.Link}`}>link1</span>
-                <span className={`${style.Link}`}>link2</span>
-                <span className={`${style.Link}`}>link3</span>
-                <span className={`${style.Link}`}>link4</span>
-                <span className={`${style.Link}`}>link5</span>
-                <span className={`${style.Link}`}>link6</span>
-                <span className={`${style.Link}`}>link7</span>
-                <span className={`${style.Link}`}>link8</span>
-                <span className={`${style.Link}`}>link9</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/lecturer-list`);
+                    }
+                }>Присутні</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/lessons-schedule`);
+                    }
+                }>Розклад занять</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/news`);
+                    }
+                }>Новини</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/students`);
+                    }
+                }>Студенти</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/attendance-of-groups`);
+                    }
+                }>Відвідуваність груп</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/educational-materials`);
+                    }
+                }>Навчальні матеріали</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/load`);
+                    }
+                }>Навантаження</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/profile`);
+                    }
+                }>Профіль</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/planning`);
+                    }
+                }>Планування</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/homework`);
+                    }
+                }>Домашні завдання</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/connect-with-admin`);
+                    }
+                }>Зв'язок з адміністрацією</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/contacts`);
+                    }
+                }>Контакти</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/chat`);
+                    }
+                }>Чат</span>
             </div>
             <div onClick={()=>{
                 if(!isClosed){
