@@ -15,29 +15,9 @@ function Menu() {
                 }>Викладачі</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/lessons-schedule`);
+                        Navigate(`/planning`);
                     }
-                }>Розклад занять</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/news`);
-                    }
-                }>Новини</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/students`);
-                    }
-                }>Студенти</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/attendance-of-groups`);
-                    }
-                }>Відвідуваність груп</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/educational-materials`);
-                    }
-                }>Навчальні матеріали</span>
+                }>Планування</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
                         Navigate(`/load`);
@@ -45,22 +25,27 @@ function Menu() {
                 }>Навантаження</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/profile`);
+                        Navigate(`/certification-training`);
                     }
-                }>Профіль</span>
+                }>Підвищення кваліфікації</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/planning`);
+                        Navigate(`/protocol-of-department-meetings`);
                     }
-                }>Планування</span>
+                }>Протоколи засідань кафедри</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/homework`);
+                        Navigate(`/mutal-visit`);
                     }
-                }>Домашні завдання</span>
+                }>Взаємовідвідування</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/connect-with-admin`);
+                        Navigate(`/graduation`);
+                    }
+                }>Дипломування</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/connect-with-administration`);
                     }
                 }>Зв'язок з адміністрацією</span>
                 <span className={`${style.Link}`} onClick={
