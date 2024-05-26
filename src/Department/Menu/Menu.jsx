@@ -12,7 +12,7 @@ function Menu() {
                     ()=>{
                         Navigate(`/lecturer-list`);
                     }
-                }>Присутні</span>
+                }>Викладачі</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
                         Navigate(`/lessons-schedule`);
