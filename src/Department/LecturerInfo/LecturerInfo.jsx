@@ -46,75 +46,16 @@ function LecturerInfo() {
                             <span>???</span>
                             <span>???</span>
                             <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
+                            
+                        </div>
+                        <span>Стажування:</span>
+                        <div className={`${style.Block}`}>
                             <span>???</span>
                             <span>???</span>
                             <span>???</span>
                             <span>???</span>
                         </div>
+                        
                     </div>
                 </div>
             </div>

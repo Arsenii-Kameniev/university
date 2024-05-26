@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     background-color: bisque;
 }
@@ -65,15 +64,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: black;
 }
 .LecturerFullInfo{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    overflow-y: scroll;
     padding: 5px;
     width: 100%;
-    background-color: fuchsia;
     height: 90vh;
     margin: 5px;
 }
