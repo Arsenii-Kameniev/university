@@ -1,0 +1,38 @@
+.Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+.NavLink{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.Planning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    padding: 60px;
+    background-color: antiquewhite;
+}
+.BuutonStOne{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: gray;
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    transition: all 0.2s;
+}
+.BuutonStOne:hover{
+    background-color: aliceblue;
+}
