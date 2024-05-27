@@ -58,7 +58,9 @@ function AddPlan() {
                         <span style={{ width: "60px", margin: "5px" }}>{id + 1}.</span>
                         <div onChange={(e) => {
                         }} className={`${style.TextArea}`}>
-                            <span>Common text</span>
+
+                            <span> Common text </span>
+
                         </div>
                     </div>
                     <button onClick={() => {
