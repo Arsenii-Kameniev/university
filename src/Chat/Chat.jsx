@@ -5,7 +5,7 @@ import * as React from "react";
 import { useMouse } from "@uidotdev/usehooks";
 import { useEffect } from 'react';
 import Chat2 from "../Chat2/Chat2";
-export function Chat() {
+function Chat() {
     const [mouse, ref] = useMouse();
     const useMousePosition = () => {
         const [
@@ -74,3 +74,4 @@ export function Chat() {
     );
 }
 
+export default Chat;

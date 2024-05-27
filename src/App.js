@@ -8,7 +8,7 @@ import { LessonsSchedule } from './Department/LessonsScedule/LessonsSchedule';
 import { Students } from './Department/Students/Students';
 import Planning from './Department/Planning/Planning';
 import AddPlan from './Department/Planning/AddPlan';
-
+import Chat from './Chat/Chat';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path='/lecturer/:lecturerId' element={<LecturerInfo />}></Route>
           <Route path='/planning' element={<Planning/>}></Route>
           <Route path='/planning/add-plan' element={<AddPlan/>}></Route>
+          <Route path='/chat' element={<Chat/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
