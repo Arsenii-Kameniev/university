@@ -33,6 +33,6 @@ export const lecturerSlice = createSlice({
     extraReducers: (builder) => {
     }
 });
-export const {setLecturerListl} = lecturerSlice.actions;
+export const {setLecturerList} = lecturerSlice.actions;
 export const selectLecturerList = (state) => state.lecturer.LecturerList;
 export default lecturerSlice.reducer;
