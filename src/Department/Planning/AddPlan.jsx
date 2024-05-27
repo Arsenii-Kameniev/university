@@ -15,12 +15,14 @@ function AddPlan() {
     const dispatch = useDispatch();
     const User = useSelector(selectUser);
     const PlanList = useSelector(selectPlanList);
-    const [NumOfElements, setNumOfElements] = useState(PlanList.length + 1);
+    const [NumOfElements, setNumOfElements] = useState(PlanList.length+1);
     const [Value, setValue] = useState("");
     const [EditMode, setEditMode] = useState(false);
+    
     useEffect(() => {
         dispatch(getPlanList({ id: User.id }));
     }, [PlanList])
+
     function putPlanList() {
         return <div className={`${style.PlanList}`}>
             <div className={`${style.PlanObjectField}`}>
