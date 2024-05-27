@@ -21,6 +21,54 @@
     padding: 60px;
     background-color: antiquewhite;
 }
+.Input{
+    width: 300px;
+}
+.InputInfo{
+    width: 300px;
+    margin: 5px;
+}
+.PlanList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+.PlanObjectField{
+    display: flex;
+    align-items: center;
+}
+.ButtonPM{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 3px;
+}
+.PlanObject{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 7px;
+    border-color: black;
+    background-color: white;
+}
+.PlanningMenu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    padding: 0px 60px 0px 60px;
+    background-color: antiquewhite;
+}
 .BuutonStOne{
     background-color: white;
     border-style: solid;
