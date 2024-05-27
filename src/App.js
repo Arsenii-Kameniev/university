@@ -7,8 +7,12 @@ import LecturerInfo from './Department/LecturerInfo/LecturerInfo';
 import { LessonsSchedule } from './Department/LessonsScedule/LessonsSchedule';
 import { Students } from './Department/Students/Students';
 import Planning from './Department/Planning/Planning';
+
 import { Chat } from './Chat/Chat';
 import { Tests } from './Department/TeacherTesting/Tests';
+
+import AddPlan from './Department/Planning/AddPlan';
+
 
 function App() {
   return (
@@ -21,8 +25,11 @@ function App() {
           <Route path='/students' element={<Students />}></Route>
           <Route path='/lecturer/:lecturerId' element={<LecturerInfo />}></Route>
           <Route path='/planning' element={<Planning/>}></Route>
+
           <Route path='/chat' element={<Chat />}></Route>
           <Route path='/teacher-tests' element={<Tests/>}></Route>
+
+          <Route path='/planning/add-plan' element={<AddPlan/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
