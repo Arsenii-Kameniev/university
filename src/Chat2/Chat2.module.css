@@ -1,3 +1,14 @@
+.columnLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.columnRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 .Chat{
     display: flex;
     flex-direction: column;
@@ -10,8 +21,8 @@
 }
 
 .Name{
-    font-size: 34px;
-    color: aliceblue;
+    font-size: 16px;
+    color: black;
 }
 .Profile{
     display: flex;
@@ -93,6 +104,8 @@
 }
 .MessageRight{
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     align-self: end;
     align-items: end;
     width: 60%;
@@ -117,7 +130,6 @@
     color: gray;
     font-size: 12px;
     padding: 10px;
-    padding-left: 30px;
     background-color: white;
     border-radius: 15px 0px 0px 0px;
 }
@@ -125,7 +137,22 @@
     color: gray;
     font-size: 12px;
     padding: 10px;
-    padding-left: 30px;
     background-color: white;
+    border-radius: 0px 15px 0px 0px;
+}
+.NameLeft{
+    color: gray;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 15px 0px 0px 0px;
+}
+.NameRight{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    align-self: end;
+    color: gray;
+    font-size: 12px;
+    padding: 10px;
     border-radius: 0px 15px 0px 0px;
 }

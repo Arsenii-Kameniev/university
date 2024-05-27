@@ -50,9 +50,9 @@ function Menu() {
                 }>Зв'язок з адміністрацією</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/contacts`);
+                        Navigate(`/teacher-tests`);
                     }
-                }>Контакти</span>
+                }>Тестування</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
                         Navigate(`/chat`);
