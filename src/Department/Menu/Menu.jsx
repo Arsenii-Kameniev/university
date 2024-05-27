@@ -1,6 +1,6 @@
 import { useState } from "react";
-import style from "./Menu.module.css";
-import { Navigate, useNavigate } from 'react-router-dom';
+import style from "./Menu.module.css"
+import { NavLink, Navigate, useNavigate } from 'react-router-dom';
 function Menu() {
     const [styleLeft, setStyleLeft]=useState("-263px");
     const [isClosed, setIsClosed]=useState(true);
@@ -12,42 +12,7 @@ function Menu() {
                     ()=>{
                         Navigate(`/lecturer-list`);
                     }
-                }>Присутні</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/lessons-schedule`);
-                    }
-                }>Розклад занять</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/news`);
-                    }
-                }>Новини</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/students`);
-                    }
-                }>Студенти</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/attendance-of-groups`);
-                    }
-                }>Відвідуваність груп</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/educational-materials`);
-                    }
-                }>Навчальні матеріали</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/load`);
-                    }
-                }>Навантаження</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/profile`);
-                    }
-                }>Профіль</span>
+                }>Викладачі</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
                         Navigate(`/planning`);
@@ -55,12 +20,32 @@ function Menu() {
                 }>Планування</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/homework`);
+                        Navigate(`/load`);
                     }
-                }>Домашні завдання</span>
+                }>Навантаження</span>
                 <span className={`${style.Link}`} onClick={
                     ()=>{
-                        Navigate(`/connect-with-admin`);
+                        Navigate(`/certification-training`);
+                    }
+                }>Підвищення кваліфікації</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/protocol-of-department-meetings`);
+                    }
+                }>Протоколи засідань кафедри</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/mutal-visit`);
+                    }
+                }>Взаємовідвідування</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/graduation`);
+                    }
+                }>Дипломування</span>
+                <span className={`${style.Link}`} onClick={
+                    ()=>{
+                        Navigate(`/connect-with-administration`);
                     }
                 }>Зв'язок з адміністрацією</span>
                 <span className={`${style.Link}`} onClick={
