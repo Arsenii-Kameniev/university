@@ -90,3 +90,116 @@
     background-color: rgb(20, 20, 30);
     color: white;
 }
+.Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+.NavLink{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.Planning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    padding: 60px;
+    background-color: antiquewhite;
+}
+.Input{
+    width: 300px;
+}
+.InputInfo{
+    width: 100%;
+    margin: 5px;
+    height: 60%;
+}
+.PlanList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+.PlanObjectField{
+    display: flex;
+    align-items: center;
+}
+.ButtonPM{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 3px;
+}
+.PlanObject{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 7px;
+    border-color: black;
+    background-color: white;
+}
+.PlanningMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    padding: 0px 60px 0px 60px;
+    background-color: antiquewhite;
+}
+.BuutonStOne{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: gray;
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.2s;
+}
+.BuutonStOne:hover{
+    background-color: aliceblue;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 75%;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 7px;
+    border-color: black;
+    background-color: white;
+}
+.simpleRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.InputText{
+    margin: 10px;
+    font-size: 18px;
+}
