@@ -17,13 +17,8 @@ function App() {
           <Route path='/lecturer-list' element={<LecturerList />}></Route>
           <Route path='/lessons-schedule' element={<LessonsSchedule />}></Route>
           <Route path='/lecturer/:lecturerId' element={<LecturerInfo />}></Route>
-<<<<<<< HEAD
-          <Route path='/planning' element={<Planning/>}></Route>
-          <Route path='/planning/add-plan' element={<AddPlan/>}></Route>
           <Route path='/chat' element={<Chat/>}></Route>
-=======
           <Route path='/planning' element={<AddPlan/>}></Route>
->>>>>>> 8f37deb1b4368ec2f750d528a7c627e267f491fa
         </Routes>
       </BrowserRouter>
     </>
