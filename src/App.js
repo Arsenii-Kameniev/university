@@ -6,6 +6,7 @@ import LecturerList from './Department/LecturerInfo/LecturerList';
 import { News } from './Department/News/News';
 import { LessonsSchedule } from './Department/LessonsScedule/LessonsSchedule';
 import { Students } from './Department/Students/Students';
+import { Chat } from './Chat/Chat';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/lessons-schedule' element={<LessonsSchedule />}></Route>
           <Route path='/news' element={<News />}></Route>
           <Route path='/students' element={<Students />}></Route>
+          <Route path='/chat' element={<Chat />}></Route>
         </Routes>
       </BrowserRouter>
     </>

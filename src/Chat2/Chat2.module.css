@@ -1,0 +1,131 @@
+.Chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 86vw;
+    height: 90vh;
+    border-radius: 7px;
+    margin: 0px 20px;
+}
+
+.Name{
+    font-size: 34px;
+    color: aliceblue;
+}
+.Profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    color: aliceblue;
+    background: #329A93;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.MessageInput{
+    width: 100%;
+    height: 90%;
+    font-size: x-large;
+    background-color: aliceblue;
+    border-style: none;
+    outline: none;
+}
+.MessageInput::placeholder{
+    color: black;
+    font-size: x-large;
+}
+.ChatHistory{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 7px;
+}
+.icon1{
+    color: white;
+    width: 34px;
+    height: 34px;
+}
+.Input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    font-size: 30px;
+    color: #1e1e1e;;
+    background: aliceblue;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.MessageLeft{
+    display: flex;
+    align-self: start;
+    align-items: end;
+    width: 60%;
+    font-size: 30px;
+    color: #1e1e1e;
+    
+    /* background: white; */
+    /* border-radius: 7px;
+    border-width: 1px; */
+}
+.MessageTextLeft{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100%;
+    background-color: rgb(227, 241, 253);
+    border-radius: 15px 15px 0px 0px;
+}
+.TextLeft{
+    padding: 10px;
+    color: #1e1e1e;
+    font-size: 15px;
+}
+.MessageRight{
+    display: flex;
+    align-self: end;
+    align-items: end;
+    width: 60%;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+.MessageTextRight{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100%;
+    background-color: rgb(120, 247, 141);
+    border-radius: 15px 15px 0px 0px;
+}
+.TextRight{
+    padding: 10px;
+    color: #1e1e1e;
+    font-size: 15px;
+}
+.TimeLeft{
+    color: gray;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 15px 0px 0px 0px;
+}
+.TimeRight{
+    color: gray;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 0px 15px 0px 0px;
+}
