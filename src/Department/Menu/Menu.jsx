@@ -8,56 +8,36 @@ function Menu() {
     return(
         <div style={{left: styleLeft}} className={`${style.Menu}`}>
             <div className={`${style.List}`}>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/lecturer-list`);
-                    }
-                }>Викладачі</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/planning`);
-                    }
-                }>Планування</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/load`);
-                    }
-                }>Навантаження</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/certification-training`);
-                    }
-                }>Підвищення кваліфікації</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/protocol-of-department-meetings`);
-                    }
-                }>Протоколи засідань кафедри</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/mutal-visit`);
-                    }
-                }>Взаємовідвідування</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/graduation`);
-                    }
-                }>Дипломування</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/connect-with-administration`);
-                    }
-                }>Зв'язок з адміністрацією</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/teacher-tests`);
-                    }
-                }>Тестування</span>
-                <span className={`${style.Link}`} onClick={
-                    ()=>{
-                        Navigate(`/chat`);
-                    }
-                }>Чат</span>
+                <NavLink className={`${style.NavLink}`} to="/lecturer-list">
+                    <span className={`${style.Link}`}>Викладачі</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/planning">
+                    <span className={`${style.Link}`}>Планування</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/load">
+                    <span className={`${style.Link}`}>Навантаження</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/certification-training">
+                    <span className={`${style.Link}`}>Підвищення кваліфікації</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/protocol-of-department-meetings">
+                    <span className={`${style.Link}`}>Протоколи засідань кафедри</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/mutal-visit">
+                    <span className={`${style.Link}`}>Взаємовідвідування</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/graduation">
+                    <span className={`${style.Link}`}>Дипломування</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/connect-with-administration">
+                    <span className={`${style.Link}`}>Зв'язок з адміністрацією</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/teacher-tests">
+                    <span className={`${style.Link}`}>Тестування</span>
+                </NavLink>
+                <NavLink className={`${style.NavLink}`} to="/chat">
+                    <span className={`${style.Link}`}>Чат</span>
+                </NavLink>
             </div>
             <div onClick={()=>{
                 if(!isClosed){

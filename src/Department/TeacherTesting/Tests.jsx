@@ -2,12 +2,11 @@ import style from './Tests.module.css';
 import Menu from '../../Department/Menu/Menu';
 import { useEffect, useState } from "react";
 
-export function Tests() {
+function Tests() {
     const [NumOfElements, setNumOfElements] = useState(0);
-    const [PlanList, setPlanList] = useState([{}]);
-    const [Theme, setTheme] = useState();
-    const [Link, setLink] = useState();
-    const [Delete, setDelete] = useState();
+    const [Theme, setTheme] = useState("");
+    const [Link, setLink] = useState("");
+    const [Delete, setDelete] = useState("");
     const [Reload, setReload] = useState(0);
     const [Card, setCard] = useState([]);
     useEffect(() => {
@@ -99,3 +98,4 @@ export function Tests() {
         </div>
     </>);
 }
+export default Tests;
