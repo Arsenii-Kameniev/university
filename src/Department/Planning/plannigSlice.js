@@ -21,7 +21,8 @@ export const addPlan = createAsyncThunk(
         console.log(state);
         const response = await axios.post(`http://localhost:5008/api/IndividualPlans`, {
             id: state.id,
-            teacherId: state.teacherId,
+            teacherId: state.id,
+            file: state.file,
             name: state.name
         });
         return response.data;
@@ -42,6 +43,7 @@ export const putPlan = createAsyncThunk(
         const response = await axios.put(`http://localhost:5008/api/IndividualPlans/${state.id}`, {
             id: state.id,
             teacherId: state.teacherId,
+            file: state.file,
             name: state.name
         });
         return response.data;
