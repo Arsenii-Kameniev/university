@@ -9,6 +9,7 @@ import AddPlan from './Department/Planning/AddPlan';
 import Chat from './Chat/Chat';
 import Tests from './Department/TeacherTesting/Tests';
 import Meetings from './Department/ProtocolOfDepartmentMeetings/Meetings';
+import ConnectWithAdmin from './Department/ConnectWithAdmin/ConnectWithAdmin';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/teacher-tests' element={<Tests/>}></Route>
           <Route path='/planning' element={<AddPlan/>}></Route>
           <Route path='/protocol-of-department-meetings' element={<Meetings/>}></Route>
+          <Route path='/connect-with-administration' element={<ConnectWithAdmin/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
