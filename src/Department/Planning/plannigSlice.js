@@ -3,12 +3,13 @@ import axios from 'axios';
 
 const initialState = {
     User: {id: "4d905ba7-d939-4d3f-95f7-1a58c3f411bf"},
-    PlanList: []
+    PlanList: {items:[]}
 }
 
 export const getPlanList = createAsyncThunk(
     'getPlanList',
     async (state) => {
+        //console.log("GET");
         const response = await axios.get(`http://localhost:5008/api/IndividualPlans/GetByUserId/${state.id}`, {
             id: state.id,
         });
@@ -18,21 +19,21 @@ export const getPlanList = createAsyncThunk(
 export const addPlan = createAsyncThunk(
     'addPlan',
     async (state) => {
-        console.log(state);
-        const response = await axios.post(`http://localhost:5008/api/IndividualPlans`, {
-            id: state.id,
-            teacherId: state.id,
-            file: state.file,
-            name: state.name
-        });
+        console.log("Post");
+        console.log(state.file);
+        const response = await axios.post(`http://localhost:5008/api/IndividualPlans?TeacherId=${state.id}&Name=${state.name}`, state.file);
+        console.log("DATA");
+        console.log(response.data);
         return response.data;
     }
 );
 export const deletePlan = createAsyncThunk(
     'deletePlan',
     async (state) => {
-        const response = await axios.delete(`http://localhost:5008/api/IndividualPlans/${state.id}`, {
-            id: state.id
+        // console.log("DELETE");
+        // console.log(state);
+        const response = await axios.delete(`http://localhost:5008/api/IndividualPlans/${state}`, {
+            id: state
         });
         return response.data;
     }
@@ -40,12 +41,10 @@ export const deletePlan = createAsyncThunk(
 export const putPlan = createAsyncThunk(
     'putPlan',
     async (state) => {
-        const response = await axios.put(`http://localhost:5008/api/IndividualPlans/${state.id}`, {
-            id: state.id,
-            teacherId: state.teacherId,
-            file: state.file,
-            name: state.name
-        });
+        // console.log("PUT");
+        // console.log(state);
+        // {id}?TeacherId=4d905ba7-d939-4d3f-95f7-1a58c3f411bf&Name=123ABC
+        const response = await axios.put(`http://localhost:5008/api/IndividualPlans/${state.id}?TeacherId=${state.teacherId}&Name=${state.name}`, state.file);
         return response.data;
     }
 );

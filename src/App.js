@@ -8,6 +8,7 @@ import { LessonsSchedule } from './Department/LessonsScedule/LessonsSchedule';
 import AddPlan from './Department/Planning/AddPlan';
 import Chat from './Chat/Chat';
 import Tests from './Department/TeacherTesting/Tests';
+import Meetings from './Department/ProtocolOfDepartmentMeetings/Meetings';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/chat' element={<Chat/>}></Route>
           <Route path='/teacher-tests' element={<Tests/>}></Route>
           <Route path='/planning' element={<AddPlan/>}></Route>
+          <Route path='/protocol-of-department-meetings' element={<Meetings/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
