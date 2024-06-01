@@ -9,6 +9,7 @@ import AddPlan from './Department/Planning/AddPlan';
 import Chat from './Chat/Chat';
 import Tests from './Department/TeacherTesting/Tests';
 import ConnectWithAdmin from './Department/ConnectWithAdmin/ConnectWithAdmin';
+import CertificationTraining from './Department/CertificationTraining/CertificationTraining';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/teacher-tests' element={<Tests/>}></Route>
           <Route path='/planning' element={<AddPlan/>}></Route>
           <Route path='/connect-with-administration' element={<ConnectWithAdmin/>}></Route>
+          <Route path='/certification-training' element={<CertificationTraining/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
