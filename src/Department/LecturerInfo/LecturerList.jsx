@@ -3,32 +3,39 @@ import style from "./Lecturer.module.css"
 import { NavLink } from "react-router-dom";
 import {
     selectLecturerList,
-    setLecturerList
+    setLecturerList,
+    getLecturerList
 } from "./lecturerSlice"
-import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 function LecturerList() {
-
+    const dispatch = useDispatch();
     const LecturerList = useSelector(selectLecturerList);
     const [NameFilter, setNameFilter] = useState("");
-    const [SyllabusFilter, setSyllabusFilter] = useState("");
+    const [EmailFilter, setEmailFilter] = useState("");
+    
+    useEffect(() => {
+        dispatch(getLecturerList());
+        // console.log(GlobalPlanList);
+    }, [])
+
     function putLecturerList() {
         return <div className={`${style.List}`}>
             {LecturerList.filter((item)=>{
-                if(item.Name.includes(NameFilter) && item.Syllabus.includes(SyllabusFilter)){
+                if(item.userName.includes(NameFilter) && item.email.includes(EmailFilter)){
                     return true;
                 }
                 else{
                     return false;
                 }
             }).map((item) => {
-                return <div className={`${style.ListElement}`}>
-                    <NavLink className={`${style.NavLink}`} to={`/lecturer/${`id`}`}>
+                return <div key={`${item.id}`} className={`${style.ListElement}`}>
+                    <NavLink className={`${style.NavLink}`} to={`/lecturer/${item.id}`}>
                         <div className={`${style.LecturerFullName}`}>
-                            <span>{item.Name}</span>
+                            <span>{item.userName}</span>
                         </div>
                         <div className={`${style.LecturerSyllabus}`}>
-                            <span>{item.Syllabus}</span>
+                            <span>{item.email}</span>
                         </div>
                     </NavLink>
                 </div>
@@ -43,7 +50,7 @@ function LecturerList() {
                     <span>Викладач:</span>
                 </div>
                 <div className={`${style.LecturerSyllabus}`}>
-                    <span>Предмет:</span>
+                    <span>Скринька:</span>
                 </div>
             </div>
 
@@ -55,7 +62,7 @@ function LecturerList() {
                 </div>
                 <div className={`${style.LecturerSyllabus}`}>
                     <input onChange={(e)=>{
-                        setSyllabusFilter(e.target.value)
+                        setEmailFilter(e.target.value)
                     }}/>
                 </div>
             </div>

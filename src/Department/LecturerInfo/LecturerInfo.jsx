@@ -1,8 +1,28 @@
 import Menu from "../Menu/Menu";
 import style from "./Lecturer.module.css"
+import {
+    selectUser,
+    getUser,
+    getselectScientificAndPedagogicalActivities,
+    selectScientificAndPedagogicalActivities,
+    selectTraineeships,
+    getTraineeships,
+} from "./lecturerSlice"
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 function LecturerInfo() {
+    const dispatch = useDispatch();
     let { LecturerId } = useParams();
+    const User = useSelector(selectUser);
+    const Traineeships = useSelector(selectTraineeships);
+    const ScientificAndPedagogicalActivities = useSelector(selectScientificAndPedagogicalActivities);
+    useEffect(() => {
+        // console.log("LecturerId");
+        // console.log(LecturerId);
+        dispatch(getUser({ id: LecturerId }));
+        // console.log(GlobalPlanList);
+    }, [])
     return (
         <div className={`${style.Page}`}>
             <Menu></Menu>
@@ -13,49 +33,31 @@ function LecturerInfo() {
                     <div className={`${style.LecturerFullInfo}`}>
                         <span>Викладач:</span>
                         <div className={`${style.Block}`}>
-                            <span>First Name</span>
-                            <span>Second Name</span>
-                            <span>Father`s Name</span>
+                            <span>{User.firstName}</span>
+                            <span>{User.lastName}</span>
                         </div>
                         <span>Контактні Данні:</span>
                         <div className={`${style.Block}`}>
-                            <span>Phone Number</span>
-                            <span>EMail</span>
+                            <span>{User.departmentEmail}</span>
+                            <span>{User.email}</span>
+                            <span>{User.phoneNumber}</span>
                         </div>
-                        <span>Дисципліни:</span>
+                        <span>Кафедра:</span>
                         <div className={`${style.Block}`}>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
+                            <span>{User.departmentName}</span>
                         </div>
                         <span>Науково-Педагогічна Активність:</span>
                         <div className={`${style.Block}`}>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                        </div>
-                        <span>Предмети Викладання:</span>
-                        <div className={`${style.Block}`}>
-                            <span>Syllabus</span>
-                            <span>Syllabus</span>
-                            <span>Syllabus</span>
+                            {ScientificAndPedagogicalActivities.map((item) => {
+                                return <span key={`${item.id}`}>{item.name}</span>
+                            })}
                         </div>
                         <span>Стажування:</span>
                         <div className={`${style.Block}`}>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            
+                            {Traineeships.map((item) => {
+                                return <span key={`${item.id}`}>{item.name}</span>
+                            })}
                         </div>
-                        <span>Стажування:</span>
-                        <div className={`${style.Block}`}>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
